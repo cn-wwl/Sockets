@@ -1,0 +1,10 @@
+D:\Code\Demo\Socket\ClientServer\bin\Debug\ClientServer.exe.config
+D:\Code\Demo\Socket\ClientServer\bin\Debug\ClientServer.exe
+D:\Code\Demo\Socket\ClientServer\bin\Debug\ClientServer.pdb
+D:\Code\Demo\Socket\ClientServer\bin\Debug\Newtonsoft.Json.dll
+D:\Code\Demo\Socket\ClientServer\bin\Debug\Newtonsoft.Json.xml
+D:\Code\Demo\Socket\ClientServer\obj\Debug\ClientServer.csprojAssemblyReference.cache
+D:\Code\Demo\Socket\ClientServer\obj\Debug\ClientServer.csproj.CoreCompileInputs.cache
+D:\Code\Demo\Socket\ClientServer\obj\Debug\ClientServer.csproj.CopyComplete
+D:\Code\Demo\Socket\ClientServer\obj\Debug\ClientServer.exe
+D:\Code\Demo\Socket\ClientServer\obj\Debug\ClientServer.pdb

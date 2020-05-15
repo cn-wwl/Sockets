@@ -160,7 +160,7 @@ namespace ClientServer
                 }
                 var commandmsg = Encoding.GetEncoding("GB2312").GetString(info);
 
-                Console.WriteLine($"{iPEnd}发送消息：" + commandmsg);
+                Console.WriteLine($"【webserver发送消息】：" + commandmsg);
 
                 //简单判断了一下是不是web网站服务端的连接发过来的数据
                 if (commandmsg.Contains("ConcentratorNo"))
@@ -184,17 +184,6 @@ namespace ClientServer
             {
                 Console.WriteLine(DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "ReceiveDone出错");
             }
-        }
-
-        public void Send(string ipaddress, string messagestr)
-        {
-            byte[] send = Encoding.Default.GetBytes(messagestr);
-
-            if (dic_conn.Keys.Any(s => s.Equals(ipaddress)))
-            {
-                dic_conn.FirstOrDefault(s => s.Key.Equals(ipaddress)).Value.Socket.Send(send);
-                Console.WriteLine("发送消息为：" + messagestr);
-            } 
         } 
 
         /// <summary>
@@ -216,7 +205,7 @@ namespace ClientServer
                 if (!dic_conn.IsEmpty)
                 {
                     dic_conn.First().Value.Socket.Send(send);
-                    Console.WriteLine($"抄表服务端发送指令：{ msg }");
+                    Console.WriteLine($"【clinetserver回复】：{ msg }");
                 }
             }
         }

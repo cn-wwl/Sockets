@@ -143,7 +143,7 @@ namespace websocket_easy
                     {
                         ClickToCopyModel msgr = null;
                         item.msgdic.TryTake(out msgr);
-
+                        msg.IsDownCommand = true;
                         string sendmsg = JsonConvert.SerializeObject(msg);
                         item.Socket.Send(sendmsg);
                     }
